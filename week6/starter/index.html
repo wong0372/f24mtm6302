@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-commerce Website</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="styles.css"> -->
+</head>
+<body>
+  <!-- Container -->
+  <div class="container">
+    <div class="row">
+      <!-- Products Column -->
+      <div class="col col-12 col-md-8">
+        <h2>Products</h2>
+         <!-- Categories -->
+        <div class="row mb-3">
+          <ul id="categories" class="nav category-list">
+            <!-- Categories will be dynamically inserted here -->
+          </ul>
+        </div>
+        <!-- Products -->
+        <div class="row" id="products">
+          <!-- Products will be dynamically inserted here -->
+          <div class="col col-12 col-md-6 col-lg-4 p-3 bg-light">
+            <img class="img-fluid" src="images/blue-t-shirt-maple-leaf.webp" alt="Maple Leaf T-Shirt" />
+            <h2>Maple Leaf T-Shirt</h2>
+            <div class="d-flex justify-content-between">
+              <p><strong><em>$7.99</em></strong></p>
+              <button class="btn btn-secondary rounded-0">
+                Buy
+              </button>
+            </div>
+          </div>
+          <div class="col col-12 col-md-6 col-lg-4 p-3 bg-light">
+            <img class="img-fluid" src="images/dark-green-t-shirt-parliament-hill.webp" alt="Maple Leaf T-Shirt" />
+            <h2>Maple Leaf T-Shirt</h2>
+            <div class="d-flex justify-content-between">
+              <p><strong><em>$7.99</em></strong></p>
+              <button class="btn btn-secondary rounded-0">
+                Buy
+              </button>
+            </div>
+          </div>
+          <div class="col col-12 col-md-6 col-lg-4 p-3 bg-light">
+            <img class="img-fluid" src="images/dark-navy-blue-t-shirt-montreal.webp" alt="Maple Leaf T-Shirt" />
+            <h2>Maple Leaf T-Shirt</h2>
+            <div class="d-flex justify-content-between">
+              <p><strong><em>$7.99</em></strong></p>
+              <button class="btn btn-secondary rounded-0">
+                Buy
+              </button>
+            </div>
+          </div>
+
+          <div class="col col-12 col-md-6 col-lg-4 p-3 bg-light">
+            <img class="img-fluid" src="images/green-t-shirt-landscape.webp" alt="Maple Leaf T-Shirt" />
+            <h2>Maple Leaf T-Shirt</h2>
+            <div class="d-flex justify-content-between">
+              <p><strong><em>$7.99</em></strong></p>
+              <button class="btn btn-secondary rounded-0">
+                Buy
+              </button>
+            </div>
+          </div>
+          <div class="col col-12 col-md-6 col-lg-4 p-3 bg-light">
+            <img class="img-fluid" src="images/light-gray-t-shirt-quebec-city.webp" alt="Maple Leaf T-Shirt" />
+            <h2>Maple Leaf T-Shirt</h2>
+            <div class="d-flex justify-content-between">
+              <p><strong><em>$7.99</em></strong></p>
+              <button class="btn btn-secondary rounded-0">
+                Buy
+              </button>
+            </div>
+          </div>
+          <div class="col col-12 col-md-6 col-lg-4 p-3 bg-light">
+            <img class="img-fluid" src="images/maroon-t-shirt-beaver.webp" alt="Maple Leaf T-Shirt" />
+            <h2>Maple Leaf T-Shirt</h2>
+            <div class="d-flex justify-content-between">
+              <p><strong><em>$7.99</em></strong></p>
+              <button class="btn btn-secondary rounded-0">
+                Buy
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Cart Column -->
+      <div class="col col-12 col-md-4">
+        <h2>Cart</h2>
+        <ul id="cart" class="bg-light p-3 list-group list-group-flush">
+          <p>Empty cart</p>
+        </ul>
+        <button id="checkout" class="btn btn-primary mt-3" disabled>Checkout</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- App JavaScript -->
+   <script src="main.js"></script>
+</body>
+</html>
