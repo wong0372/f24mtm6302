@@ -32,23 +32,22 @@ function removeFromCart(product) {
  * the products currently in the cart.
  */
 function displayCart() {
-    // Get the cart <ul> element from the DOM
+    // Get the cart <ol> element from the DOM
     const cartList = document.getElementById('cart');
     
     // Clear the current content of the cart display to avoid duplicates
     cartList.innerHTML = '';
 
     // Loop through the cart array and generate a list item for each product
-    cart.forEach((item, i) => {
+    cart.forEach( item => {
         // Create a new <li> element for the cart item
         const listItem = document.createElement('li');
-        listItem.className = 'list-group-item d-flex justify-content-between';
 
-        // Create a text node with the item number and name
-        const itemText = document.createTextNode(`${i + 1}. ${item}`);
+        // Create a text node with the item
+        const itemText = document.createTextNode(`${item}`);
         listItem.appendChild(itemText);  // Add the text to the <li> element
 
-        // Append the list item to the cart <ul> element in the DOM
+        // Append the list item to the cart <ol> element in the DOM
         cartList.appendChild(listItem);
     });
 }
