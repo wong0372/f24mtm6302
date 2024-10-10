@@ -1,10 +1,29 @@
-// Variables
+/** Variables */
+// 1. Create a Categories Array
 const categories = ['All', 'T-Shirts', 'Pants', 'Shoes'];
-const cart = [];
+let cart = [];
 
-/**
- * Displays the list of categories as HTML list items on the page.
- */
+/** Functions */
+//2. Display Categories Dynamically
+/* 
+function displayCategories() {
+    // Retrieve the HTML element where the categories will be displayed
+    const categoryContainer = document.getElementById('categories');
+    
+    // Clear the container in case there are existing categories
+    categoryContainer.innerHTML = '';
+
+    // Iterate over each category and create HTML list items
+    categories.forEach(category => {
+        const listItem = document.createElement('li');
+        listItem.textContent = category;
+        categoryContainer.appendChild(listItem);
+    });
+}
+*/
+
+
+//3. Refactor with map()
 function displayCategories() {
     // Retrieve the HTML element where the categories will be displayed
     const categoryContainer = document.getElementById('categories');
@@ -16,10 +35,8 @@ function displayCategories() {
     categoryContainer.innerHTML = categoryList;
 }
 
-/**
- * Adds a product to the cart and updates the cart display.
- * @param {string} product - The name of the product to be added.
- */
+
+// 4. Add Products to the Cart
 function addToCart(product) {
     // Add the selected product to the cart array
     cart.push(product);
@@ -27,10 +44,22 @@ function addToCart(product) {
     displayCart();
 }
 
-/**
- * Updates the cart display on the webpage by generating a list of
- * the products currently in the cart.
- */
+// 5. Create a specific function to display the cart. Obtain the code from the addToCart function.
+/* 
+function displayCart() {
+    // Get the cart <ol> element from the DOM
+    const cartList = document.getElementById('cart');
+    
+    // Generate HTML list items for each product in the cart array
+    const cartItems = cart.map(item => `<li>${item}</li>`).join('');
+
+    // Insert the combined HTML into the cart <ol> element
+    cartList.innerHTML = cartItems;
+}
+*/
+
+
+// 6. Refactor Using JavaScript Methods to Create HTML Elements
 function displayCart() {
     // Get the cart <ol> element from the DOM
     const cartList = document.getElementById('cart');
@@ -51,11 +80,18 @@ function displayCart() {
     });
 }
 
-/**
- * Removes a product from the cart by filtering out the selected product,
- * and updates the cart display.
- * @param {string} product - The name of the product to be removed.
- */
+// 7. Remove a Product from the Cart by index
+/*
+function removeFromCartByProduct(index) {
+    // Remove an element from the cart array by its index
+    cart.splice((index - 1), 1)
+    // Refresh the cart display to reflect the changes
+    displayCart();
+}
+*/
+
+
+// 8. Remove a Product from the Cart using filter()
 function removeFromCartByProduct(product) {
     // Create a new cart array excluding the product to be removed
     cart = cart.filter(item => item !== product);
