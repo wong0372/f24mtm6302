@@ -1,168 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>E-commerce Website</title>
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
-  <!-- <link rel="stylesheet" href="styles.css"> -->
-</head>
-<body>
-  <!-- Container -->
-  <div class="container">
-    <div class="row">
-      <!-- Products Column -->
-      <div class="col">
-        <h2>Products</h2>
-        <!-- Categories -->
-        <div class="row mb-3">
-          <ul id="categories" class="nav category-list mb-3">
-            <!-- Categories will be dynamically inserted here -->
-            <li class="nav-item">
-              <a href="#" class="nav-link btn btn-light btn-sm rounded-0 mx-1">All</a>
-            </li>
-          </ul>
-        </div>
-        <!-- Products -->
-        <div class="row" id="products">
-          <div class="col col-12 col-md-8">
-            <div class="row">
-              <!-- Products will be dynamically inserted here -->
-              <!-- Product 1 -->
-              <div class="col col-12 col-md-6 col-lg-4 p-3 bg-light">
-                <img
-                  class="img-fluid"
-                  src="images/blue-t-shirt-maple-leaf.webp"
-                  alt="Blue T-Shirt with Maple Leaf design"
-                />
-                <h3>Maple Leaf T-Shirt</h3>
-                <div class="d-flex justify-content-between">
-                  <p><strong><em>$7.99</em></strong></p>
-                  <button
-                    class="btn btn-secondary rounded-0"
-                    aria-label="Buy Maple Leaf T-Shirt"
-                  >
-                    Buy
-                  </button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-commerce Website</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+    />
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+  </head>
+  <body>
+    <!-- Container -->
+    <div class="container">
+      <div class="row">
+        <!-- Products Column -->
+        <div class="col">
+          <h2>Products</h2>
+          <!-- Categories -->
+          <div class="row mb-3">
+            <ul id="categories" class="nav category-list mb-3">
+              <!-- Categories will be dynamically inserted here -->
+              <li class="nav-item">
+                <a href="#" class="nav-link btn btn-light btn-sm rounded-0 mx-1"
+                  >All</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- Products -->
+          <div class="row" id="products">
+            <div class="col col-12 col-md-8">
+              <div class="row">
+                <!-- Products will be dynamically inserted here -->
+                <!-- Product 1 -->
+                <div class="col col-12 col-md-6 col-lg-4 p-3 bg-light">
+                  <img
+                    class="img-fluid"
+                    src="images/blue-t-shirt-maple-leaf.webp"
+                    alt="Blue T-Shirt with Maple Leaf design"
+                  />
+                  <h3>Maple Leaf T-Shirt</h3>
+                  <div class="d-flex justify-content-between">
+                    <p>
+                      <strong><em>$7.99</em></strong>
+                    </p>
+                    <button
+                      class="btn btn-secondary rounded-0"
+                      aria-label="Buy Maple Leaf T-Shirt"
+                    >
+                      Buy
+                    </button>
+                  </div>
                 </div>
-              </div>
-              <!-- Product 2 -->
-              <div class="col col-12 col-md-6 col-lg-4 p-3 bg-light">
-                <img
-                  class="img-fluid"
-                  src="images/dark-green-t-shirt-parliament-hill.webp"
-                  alt="Dark Green T-Shirt with Parliament Hill design"
-                />
-                <h3>Ottawa T-Shirt</h3>
-                <div class="d-flex justify-content-between">
-                  <p><strong><em>$7.99</em></strong></p>
-                  <button
-                    class="btn btn-secondary rounded-0"
-                    aria-label="Buy Parliament Hill T-Shirt"
-                  >
-                    Buy
-                  </button>
+                <!-- Product 2 -->
+                <div class="col col-12 col-md-6 col-lg-4 p-3 bg-light">
+                  <img
+                    class="img-fluid"
+                    src="images/dark-green-t-shirt-parliament-hill.webp"
+                    alt="Dark Green T-Shirt with Parliament Hill design"
+                  />
+                  <h3>Ottawa T-Shirt</h3>
+                  <div class="d-flex justify-content-between">
+                    <p>
+                      <strong><em>$7.99</em></strong>
+                    </p>
+                    <button
+                      class="btn btn-secondary rounded-0"
+                      aria-label="Buy Parliament Hill T-Shirt"
+                    >
+                      Buy
+                    </button>
+                  </div>
                 </div>
-              </div>
-              <!-- Product 3 -->
-              <div class="col col-12 col-md-6 col-lg-4 p-3 bg-light">
-                <img
-                  class="img-fluid"
-                  src="images/dark-navy-blue-t-shirt-montreal.webp"
-                  alt="Dark Navy Blue T-Shirt with Montreal design"
-                />
-                <h3>Montreal T-Shirt</h3>
-                <div class="d-flex justify-content-between">
-                  <p><strong><em>$7.99</em></strong></p>
-                  <button
-                    class="btn btn-secondary rounded-0"
-                    aria-label="Buy Montreal T-Shirt"
-                  >
-                    Buy
-                  </button>
+                <!-- Product 3 -->
+                <div class="col col-12 col-md-6 col-lg-4 p-3 bg-light">
+                  <img
+                    class="img-fluid"
+                    src="images/dark-navy-blue-t-shirt-montreal.webp"
+                    alt="Dark Navy Blue T-Shirt with Montreal design"
+                  />
+                  <h3>Montreal T-Shirt</h3>
+                  <div class="d-flex justify-content-between">
+                    <p>
+                      <strong><em>$7.99</em></strong>
+                    </p>
+                    <button
+                      class="btn btn-secondary rounded-0"
+                      aria-label="Buy Montreal T-Shirt"
+                    >
+                      Buy
+                    </button>
+                  </div>
                 </div>
-              </div>
-              <!-- Product 4 -->
-              <div class="col col-12 col-md-6 col-lg-4 p-3 bg-light">
-                <img
-                  class="img-fluid"
-                  src="images/green-t-shirt-landscape.webp"
-                  alt="Green T-Shirt with Landscape design"
-                />
-                <h3>Landscape T-Shirt</h3>
-                <div class="d-flex justify-content-between">
-                  <p><strong><em>$7.99</em></strong></p>
-                  <button
-                    class="btn btn-secondary rounded-0"
-                    aria-label="Buy Landscape T-Shirt"
-                  >
-                    Buy
-                  </button>
+                <!-- Product 4 -->
+                <div class="col col-12 col-md-6 col-lg-4 p-3 bg-light">
+                  <img
+                    class="img-fluid"
+                    src="images/green-t-shirt-landscape.webp"
+                    alt="Green T-Shirt with Landscape design"
+                  />
+                  <h3>Landscape T-Shirt</h3>
+                  <div class="d-flex justify-content-between">
+                    <p>
+                      <strong><em>$7.99</em></strong>
+                    </p>
+                    <button
+                      class="btn btn-secondary rounded-0"
+                      aria-label="Buy Landscape T-Shirt"
+                    >
+                      Buy
+                    </button>
+                  </div>
                 </div>
-              </div>
-              <!-- Product 5 -->
-              <div class="col col-12 col-md-6 col-lg-4 p-3 bg-light">
-                <img
-                  class="img-fluid"
-                  src="images/light-gray-t-shirt-quebec-city.webp"
-                  alt="Light Gray T-Shirt with Quebec City design"
-                />
-                <h3>Quebec City T-Shirt</h3>
-                <div class="d-flex justify-content-between">
-                  <p><strong><em>$7.99</em></strong></p>
-                  <button
-                    class="btn btn-secondary rounded-0"
-                    aria-label="Buy Quebec City T-Shirt"
-                  >
-                    Buy
-                  </button>
+                <!-- Product 5 -->
+                <div class="col col-12 col-md-6 col-lg-4 p-3 bg-light">
+                  <img
+                    class="img-fluid"
+                    src="images/light-gray-t-shirt-quebec-city.webp"
+                    alt="Light Gray T-Shirt with Quebec City design"
+                  />
+                  <h3>Quebec City T-Shirt</h3>
+                  <div class="d-flex justify-content-between">
+                    <p>
+                      <strong><em>$7.99</em></strong>
+                    </p>
+                    <button
+                      class="btn btn-secondary rounded-0"
+                      aria-label="Buy Quebec City T-Shirt"
+                    >
+                      Buy
+                    </button>
+                  </div>
                 </div>
-              </div>
-              <!-- Product 6 -->
-              <div class="col col-12 col-md-6 col-lg-4 p-3 bg-light">
-                <img
-                  class="img-fluid"
-                  src="images/maroon-t-shirt-beaver.webp"
-                  alt="Maroon T-Shirt with Beaver design"
-                />
-                <h3>Beaver T-Shirt</h3>
-                <div class="d-flex justify-content-between">
-                  <p><strong><em>$7.99</em></strong></p>
-                  <button
-                    class="btn btn-secondary rounded-0"
-                    aria-label="Buy Beaver T-Shirt"
-                  >
-                    Buy
-                  </button>
+                <!-- Product 6 -->
+                <div class="col col-12 col-md-6 col-lg-4 p-3 bg-light">
+                  <img
+                    class="img-fluid"
+                    src="images/maroon-t-shirt-beaver.webp"
+                    alt="Maroon T-Shirt with Beaver design"
+                  />
+                  <h3>Beaver T-Shirt</h3>
+                  <div class="d-flex justify-content-between">
+                    <p>
+                      <strong><em>$7.99</em></strong>
+                    </p>
+                    <button
+                      class="btn btn-secondary rounded-0"
+                      aria-label="Buy Beaver T-Shirt"
+                    >
+                      Buy
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <!-- Cart Column -->
-          <div class="col col-12 col-md-4">
-            <h2>Cart</h2>
-            <ol
-              id="cart"
-              class="bg-light p-3 list-group list-group-flush"
-            >
-              <!-- Cart items will be dynamically inserted here as <li> elements -->
+            <!-- Cart Column -->
+            <div class="col col-12 col-md-4">
+              <h2>Cart</h2>
+              <ol id="cart" class="bg-light p-3 list-group list-group-flush">
+                <!-- Cart items will be dynamically inserted here as <li> elements -->
                 <p>Empty cart</p>
-            </ol>
-            <button
-              id="checkout"
-              class="btn btn-primary mt-3"
-              disabled
-            >
-              Checkout
-            </button>
+              </ol>
+              <button id="checkout" class="btn btn-primary mt-3" disabled>
+                Checkout
+              </button>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- App JavaScript -->
-  <script src="main.js"></script>
-</body>
-
+    <!-- App JavaScript -->
+    <script src="main.js"></script>
+  </body>
 </html>

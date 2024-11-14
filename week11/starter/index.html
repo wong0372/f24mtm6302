@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-commerce Website</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="styles.css"> -->
+</head>
+<body>
+  <!-- Container -->
+  <div class="container">
+    <div class="row">
+      <!-- Products Column -->
+      <div class="col">
+        <h2>Products</h2>
+        <!-- Categories -->
+        <div class="row mb-3">
+          <ul id="categories" class="nav category-list mb-3">
+            <!-- Categories will be dynamically inserted here -->
+            <li class="nav-item">
+              <a href="#" class="nav-link btn btn-light btn-sm rounded-0 mx-1">All</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Products -->
+        <div class="row">
+          <div class="col col-12 col-md-8">
+            <div class="row" id="products">
+              <!-- Products will be dynamically inserted here -->
+              
+            </div>
+          </div>
+            <!-- Cart Column -->
+            <div class="col col-12 col-md-4">
+              <h2>Cart</h2>
+              <!-- <ol id="cart" class="bg-light p-3 list-group list-group-flush">
+                
+                  <p>Empty cart</p>
+              </ol> -->
+              <ul id="cart-items" class="list-group">
+                <!-- Cart items will be dynamically inserted here as <li> elements -->
+              </ul>
+              <!-- <button
+                id="checkout"
+                class="btn btn-primary mt-3 rounded-0"
+                disabled
+              >
+                Checkout
+              </button> -->
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal -->
+  <div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <!-- Open the form here -->
+        <form id="productForm">
+          <div class="modal-body">
+            <!-- Add your input fields here -->
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <!-- Change button type to submit for form submission -->
+            <button type="submit" class="btn btn-primary">Save changes</button>
+          </div>
+        </form>
+        <!-- Close the form here -->
+      </div>
+    </div>
+  </div>  
+  <!-- BS JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <!-- App JavaScript -->
+  <script src="main.js"></script>
+</body>
+
+</html>
